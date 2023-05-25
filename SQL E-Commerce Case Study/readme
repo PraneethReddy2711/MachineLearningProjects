@@ -1,0 +1,24 @@
+1. Import the dataset and do usual exploratory analysis steps like checking the structure & characteristics of the dataset
+    A. Data type of columns in a table
+    B. Time period for which the data is given
+    C. Cities and States covered in the dataset
+2. In-depth Exploration:
+    A. Is there a growing trend on e-commerce in Brazil? How can we describe a complete scenario? Can we see some seasonality with peaks at specific months?
+    B. What time do Brazilian customers tend to buy (Dawn, Morning, Afternoon or Night)?
+3. Evolution of E-commerce orders in the Brazil region:
+    A. Get month on month orders by region, states
+    B. How are customers distributed in Brazil
+4. Impact on Economy: Analyze the money movemented by e-commerce by looking at order prices, freight and others.
+    A. Get % increase in cost of orders from 2017 to 2018 (include months between Jan to Aug only)
+    B. Mean & Sum of price and freight value by customer state
+5. Analysis on sales, freight and delivery time
+    A. Calculate days between purchasing, delivering and estimated delivery
+    B. Create columns: time_to_delivery = order_purchase_timestamp-order_delivered_customer_date diff_estimated_delivery = order_estimated_delivery_date-order_delivered_customer_date
+    C. Group data by state, take mean of freight_value, time_to_delivery, diff_estimated_delivery
+    D. Sort the data to get the following:
+        a. Top 5 states with highest/lowest average freight value - sort in desc/asc limit 5
+        b. Top 5 states with highest/lowest average time to delivery
+        c. Top 5 states where delivery is really fast/ not so fast compared to estimated date
+6. Payment type analysis:
+    A. Month over Month count of orders for different payment types
+    B. Distribution of payment installments and count of orders
